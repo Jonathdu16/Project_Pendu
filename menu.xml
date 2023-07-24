@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/topic.dtd"[]>
+<menus>
+    <menu categorie="Fichiers"> 
+        <lien>
+            <label>Nouvelle partie</label>
+            <command>Objet.function</command>
+        </lien>
+        <lien>
+            <label>Niveaux / thèmes </label> <!-- développeur, UI designer, ...etc-->
+            <command>Objet.function</command>
+        </lien>
+        <lien>
+            <label>Apparence </label>
+            <command>Objet.function</command>
+        </lien>
+        <lien>
+            <label>Quitter </label>
+            <command>Objet.function</command>
+        </lien>
+    </menu>
+    <menu categorie="Edition">
+        <lien>
+            <label>Editer les mots </label>
+            <command>Objet.function</command>
+        </lien>
+        <lien>
+            <label>Editer les niveaux </label>
+            <command>Objet.function</command>
+        </lien>
+    </menu>
+    <menu categorie="A propos">
+        <lien>
+            <label>A propos</label>
+            <command>Objet.function</command>
+        </lien>
+    </menu>
+</menus>
