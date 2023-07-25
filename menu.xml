@@ -7,25 +7,25 @@
             <command>Objet.function</command>
         </lien>
         <lien>
-            <label>Niveaux / thèmes </label> <!-- développeur, UI designer, ...etc-->
+            <label>Niveaux / thèmes</label> <!-- développeur, UI designer, ...etc-->
             <command>Objet.function</command>
         </lien>
         <lien>
-            <label>Apparence </label>
+            <label>Apparence</label>
             <command>Objet.function</command>
         </lien>
         <lien>
-            <label>Quitter </label>
+            <label>Quitter</label>
             <command>Objet.function</command>
         </lien>
     </menu>
     <menu categorie="Edition">
         <lien>
-            <label>Editer les mots </label>
+            <label>Editer les mots</label>
             <command>Objet.function</command>
         </lien>
         <lien>
-            <label>Editer les niveaux </label>
+            <label>Editer les niveaux</label>
             <command>Objet.function</command>
         </lien>
     </menu>
