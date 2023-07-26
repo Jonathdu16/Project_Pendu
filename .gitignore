@@ -1,2 +1,4 @@
-pendu.py
-conf.json
+*.py
+!pendu_bdd.py
+*.xml
+*.json
