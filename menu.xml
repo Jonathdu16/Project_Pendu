@@ -12,11 +12,11 @@
         </lien>
         <lien>
             <label>Apparence</label>
-            <command>appearance</command>
+            <command>Appearance</command>
         </lien>
         <lien>
             <label>Quitter</label>
-            <command>destroy</command>
+            <command>Quitter</command>
         </lien>
     </menu>
     <menu categorie="Edition">

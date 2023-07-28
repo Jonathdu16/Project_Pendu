@@ -1,42 +1,21 @@
 from tkinter import *
+from pendu_menu import PenduMenu as PM
+from pendu_canevas import Pendu as PC
 import xml.etree.ElementTree as ET
+from pendu_connect import spaceWord as PW
 
 fichierXML = "C:/xampp/htdocs/Python/Projets/Pendu/Project_Pendu/menu.xml"
+bdd = "pendu_bdd.sqlite"
 
 window = Tk()
-window.geometry('600x600')
+window.geometry('1000x700')
 window.resizable(0, 0)
 window.title('Jeu du Pendu')
 
-# def 
+pendu_word = PW(bdd)
 
-# Chargement du fichier XML
-structureXML = ET.parse(fichierXML)
-ensemble = structureXML.getroot()
-
-navbar = Menu(window, background="#d9d9d9")
-
-low_menu_by_category = {}
-    
-# La première boucle sert à associer les categories à leurs labels et à intégrer les labels des sous-menues
-for lowElement in ensemble.findall('menu'):
-    category = lowElement.attrib["categorie"]
-
-    if category not in low_menu_by_category:
-        low_menu_by_category[category] = Menu(navbar, tearoff=0)
-
-    navbar_list = low_menu_by_category[category]
-
-    for belowElement in lowElement.findall('lien'):
-        label_element = belowElement.find('label')
-        if label_element is not None:
-            navbar_list.add_command(label = label_element.text)
-
-# La deuxième boucle sert à associer les categories à leurs labels
-for category, low_menu in low_menu_by_category.items():
-
-    navbar.add_cascade(label=category, menu=low_menu)
-
-window.config(menu = navbar)
+pendu_menu = PM(window, fichierXML)
+pendu_canevas = PC(window, pendu_word.select_Word_randomly())
+print(pendu_canevas.checkWord())
 
 window.mainloop()
